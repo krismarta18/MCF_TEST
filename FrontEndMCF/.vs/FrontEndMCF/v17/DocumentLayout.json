@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#_test\\MCF\\FrontEndMCF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\views\\bpkb\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\views\\bpkb\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|d:\\c#_test\\mcf\\frontendmcf\\frontendmcf\\models\\bpkviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50318D6B-C6F3-42F5-A942-5140E29A694C}|FrontEndMCF\\FrontEndMCF.csproj|solutionrelative:frontendmcf\\models\\bpkviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Program.cs",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Program.cs",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Program.cs",
+              "RelativeToolTip": "FrontEndMCF\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:44:08.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\appsettings.json",
+              "RelativeDocumentMoniker": "FrontEndMCF\\appsettings.json",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\appsettings.json",
+              "RelativeToolTip": "FrontEndMCF\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-05T20:44:07.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:44:06.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:44:05.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:44:04.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:44:04.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:43:59.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:43:57.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:43:56.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:43:54.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\BPKB\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Views\\BPKB\\Index.cshtml",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Views\\BPKB\\Index.cshtml",
+              "RelativeToolTip": "FrontEndMCF\\Views\\BPKB\\Index.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:43:46.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceResponse.cs",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\ServiceResponse.cs",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Models\\ServiceResponse.cs",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\ServiceResponse.cs",
+              "RelativeToolTip": "FrontEndMCF\\Models\\ServiceResponse.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA/wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:43:42.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "FrontEndMCF\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:43:42.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "FrontEndMCF\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:43:41.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BPKViewModels.cs",
+              "DocumentMoniker": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\BPKViewModels.cs",
+              "RelativeDocumentMoniker": "FrontEndMCF\\Models\\BPKViewModels.cs",
+              "ToolTip": "D:\\C#_test\\MCF\\FrontEndMCF\\FrontEndMCF\\Models\\BPKViewModels.cs",
+              "RelativeToolTip": "FrontEndMCF\\Models\\BPKViewModels.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:43:40.426Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
