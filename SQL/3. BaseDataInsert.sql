@@ -34,3 +34,25 @@ VALUES
 ('002', 'Honda'),
 ('003', 'Yamaha'),
 ('004', 'Kawasaki');
+
+INSERT INTO TechnicalTest_MCF..ms_user
+(
+    username,
+    password,
+    is_active
+)
+VALUES
+('jhonUmiro', 'admin1*', 1),
+('trisNatan', 'admin2@', 1),
+('hugoRess', 'admin3#*', 0);
+
+INSERT INTO TechnicalTest_MCF..ms_storage_location
+(
+    location_id,
+    location_name
+)
+VALUES
+('1001', 'GUDANG A'),
+('1002', 'GUDANG B'),
+('1003', 'GUDANG C'),
+('1004', 'GUDANG D')
