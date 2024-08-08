@@ -68,6 +68,7 @@ namespace BackEndMCF.Services
             }
         }
 
+       
         public async Task<(bool status, string message, List<ResDropdown> data)> DropdownStorage()
         {
             List<ResDropdown> res = new List<ResDropdown>();
@@ -85,6 +86,95 @@ namespace BackEndMCF.Services
                 }
                 return (true, "Dropdown", res);
             }catch(Exception e)
+            {
+                return (false, "Terjadi Kesalahan", res);
+            }
+        }
+        public async Task<(bool status, string message)> DeleteData(ReqIdAgreement req)
+        {
+            try
+            {
+                var getdata = _dbcontext.TrBpkbs.Where(e => e.AgreementNumber == req.id).FirstOrDefault();
+                if (getdata != null)
+                {
+                    _dbcontext.Remove(getdata);
+                    _dbcontext.SaveChanges();
+                    return (true, "Data berhasil dihapus");
+                }
+                else
+                {
+                    return (false, "Data tidak ditemukan");
+                }
+            }catch(Exception e)
+            {
+                return (false, "Terjadi Kesalahan");
+            }
+        }
+
+        public async Task<(bool status, string message, ResDataBPKB data)> GetDataById(ReqIdAgreement req)
+        {
+            ResDataBPKB res = new ResDataBPKB();
+            try
+            {   
+                var getdata = _dbcontext.TrBpkbs.Where(e => e.AgreementNumber == req.id).FirstOrDefault();
+                if (getdata != null)
+                {
+                    res.AGREEMENT_NUMBER = getdata.AgreementNumber;
+                    res.BPKB_NO = getdata.BpkbNo;
+                    res.BRANCH_ID = getdata.BranchId;
+                    res.BPKB_DATE = (getdata.BpkpDate.HasValue ? getdata.BpkpDate.Value.ToString("yyyy-MM-dd") : null) ;
+                    res.FAKTUR_NO = getdata.FakturNo;
+                    res.FAKTUR_DATE = (getdata.FakturDate.HasValue ? getdata.FakturDate.Value.ToString("yyyy-MM-dd") : null);
+                    res.LOCATION_ID = getdata.LocationId;
+                    res.POLICE_NO = getdata.PoliceNo;
+                    res.BPKB_DATE_IN = (getdata.BpkbDateIn.HasValue ? getdata.BpkbDateIn.Value.ToString("yyyy-MM-dd") : null);
+                    return (true, "List By Id", res);
+                }
+                else
+                {
+                    return (false, "Data tidak ditemukan",res);
+                }
+            }
+            catch(Exception e ) {
+                return (false, "Terjadi Kesalahan",res);
+            }
+        }
+
+        public async Task<(bool status, string message, List<ResDataBPKB> data)> GetList()
+        {
+            List<ResDataBPKB> res = new List<ResDataBPKB>();
+            try
+            {
+                var currentUser = _tokenManger.GetPrincipal();
+                var getdata = _dbcontext.TrBpkbs.Where(e => e.CreatedBy == currentUser.User_id).ToList();
+                if (getdata != null)
+                {
+                    foreach (var item in getdata)
+                    {
+                        ResDataBPKB dataitem = new ResDataBPKB
+                        {
+                            AGREEMENT_NUMBER = item.AgreementNumber,
+                            BPKB_NO = item.BpkbNo,
+                            BRANCH_ID = item.BranchId,
+                            BPKB_DATE = (item.BpkpDate.HasValue ? item.BpkpDate.Value.ToString("yyyy-MM-dd") : null) ,
+                        FAKTUR_NO = item.FakturNo,
+                            FAKTUR_DATE = (item.FakturDate.HasValue ? item.FakturDate.Value.ToString("yyyy-MM-dd") : null),
+                            LOCATION_ID = item.LocationId,
+                            POLICE_NO = item.PoliceNo,
+                            BPKB_DATE_IN = (item.BpkbDateIn.HasValue ? item.BpkbDateIn.Value.ToString("yyyy-MM-dd") : null),
+                        };
+                        res.Add(dataitem);
+                        
+                    }
+                    
+                    return (true, "List data", res);
+                }
+                else
+                {
+                    return (false, "Data tidak ditemukan", res);
+                }
+            }
+            catch (Exception e)
             {
                 return (false, "Terjadi Kesalahan", res);
             }

@@ -26,7 +26,7 @@ namespace FrontEndMCF.Controllers
             var IsLoggin = IsUserLoggedIn();
             if (IsLoggin)
             {
-                return View("/views/BPKB/index.cshtml");
+                return View("/views/BPKB/ListBPKB.cshtml");
             }
             else
             {
@@ -58,7 +58,7 @@ namespace FrontEndMCF.Controllers
                         ViewBag.Token = token;
                         TempData["SuccessMessage"] = data.MESSAGE;
                         HttpContext.Session.SetString("JWToken", token.ToString());
-                        return RedirectToAction("Index", "BPKB");
+                        return RedirectToAction("ListData", "BPKB");
                     }
                     else
                     {

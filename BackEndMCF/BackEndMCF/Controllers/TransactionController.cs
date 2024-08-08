@@ -81,5 +81,97 @@ namespace BackEndMCF.Controllers
             return new OkObjectResult(res);
         }
 
+        [Authorize]
+        [HttpPost("GetDataById")]
+        public async Task<IActionResult> GetDataByI([FromBody] ReqIdAgreement req)
+        {
+            var res = new ServiceResponseSingle<ResDataBPKB>();
+            try
+            {
+                var _ = await _transaction.GetDataById(req);
+
+                if (!_.status)
+                {
+                    res.CODE = 0;
+                    res.MESSAGE = _.message;
+                }
+                else
+                {
+                    res.CODE = 1;
+                    res.MESSAGE = _.message;
+                    res.DATA = _.data;
+                }
+            }
+            catch (Exception ex)
+            {
+                res.CODE = 0;
+                res.MESSAGE = ex.Message == null ? ex.InnerException.ToString() : ex.Message.ToString();
+                return new BadRequestObjectResult(res);
+            }
+
+            return new OkObjectResult(res);
+        }
+
+        [Authorize]
+        [HttpPost("GetList")]
+        public async Task<IActionResult> GetList()
+        {
+            var res = new ServiceResponse<ResDataBPKB>();
+            try
+            {
+                var _ = await _transaction.GetList();
+
+                if (!_.status)
+                {
+                    res.CODE = 0;
+                    res.MESSAGE = _.message;
+                }
+                else
+                {
+                    res.CODE = 1;
+                    res.MESSAGE = _.message;
+                    res.DATA = _.data;
+                }
+            }
+            catch (Exception ex)
+            {
+                res.CODE = 0;
+                res.MESSAGE = ex.Message == null ? ex.InnerException.ToString() : ex.Message.ToString();
+                return new BadRequestObjectResult(res);
+            }
+
+            return new OkObjectResult(res);
+        }
+
+        [Authorize]
+        [HttpPost("DeleteData")]
+        public async Task<IActionResult> DeleteData([FromBody] ReqIdAgreement req)
+        {
+            var res = new ServiceResponseSingle<string>();
+            try
+            {
+                var _ = await _transaction.DeleteData(req);
+
+                if (!_.status)
+                {
+                    res.CODE = 0;
+                    res.MESSAGE = _.message;
+                }
+                else
+                {
+                    res.CODE = 1;
+                    res.MESSAGE = _.message;
+                    //res.DATA = _.data;
+                }
+            }
+            catch (Exception ex)
+            {
+                res.CODE = 0;
+                res.MESSAGE = ex.Message == null ? ex.InnerException.ToString() : ex.Message.ToString();
+                return new BadRequestObjectResult(res);
+            }
+
+            return new OkObjectResult(res);
+        }
     }
 }

@@ -14,6 +14,8 @@
     <!-- Custom styles for this template-->
     <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="~/lib/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,8 +47,15 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <!-- Include Bootstrap Datepicker JS -->
+    
+    <script src="~/lib/vendor/jquery/jquery.min.js"></script>
+    <script src="~/lib/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="~/lib/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="~/js/datatables-demo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
     <!-- Initialize Datepicker -->
     <script>
         $(document).ready(function () {
@@ -62,6 +71,20 @@
                 format: 'yyyy-mm-dd',
                 autoclose: true
             });
+
+            $('#datepickerfakturedit').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+            $('#datepickerbpkbinedit').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+            $('#datepickerbpkbedit').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+
         });
     </script>
     @await RenderSectionAsync("Scripts", required: false)

@@ -22,4 +22,8 @@
         public DateTime BPKB_DATE_IN { get; set; }
        
     }
+    public class ReqIdAgreement
+    {
+        public string id { get; set; }
+    }
 }
