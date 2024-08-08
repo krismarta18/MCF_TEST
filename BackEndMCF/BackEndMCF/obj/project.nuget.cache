@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5wIz68c4lSI=",
+  "dgSpecHash": "H1VpaU+oMCUuct/SOxh7vzcP6ncxBMez1g5BcO2yOBW/LzVoNs2ppflqTQRAVDY/pF0CDA7Zqid8igmcBdz81A==",
   "success": true,
-  "projectFilePath": "D:\\C#_test\\MCF\\BackEndMCF\\BackEndMCF\\BackEndMCF.csproj",
+  "projectFilePath": "E:\\LamarKerja\\MCF\\MCF_TEST\\BackEndMCF\\BackEndMCF\\BackEndMCF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krist\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
