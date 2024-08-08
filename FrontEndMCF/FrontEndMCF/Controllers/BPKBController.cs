@@ -90,7 +90,7 @@ namespace FrontEndMCF.Controllers
                     if (token != null)
                     {
                         _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var payload = new { id = id }; // Membungkus ID dalam objek
+                        var payload = new { id = id };
                         var jsonContent = JsonConvert.SerializeObject(payload);
                         var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
                         var response = await _httpClient.PostAsync(_apiUrl + "GetDataById", content);
@@ -142,7 +142,7 @@ namespace FrontEndMCF.Controllers
                     if (token != null)
                     {
                         _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var payload = new { id = id }; // Membungkus ID dalam objek
+                        var payload = new { id = id }; 
                         var jsonContent = JsonConvert.SerializeObject(payload);
                         var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
                         var response = await _httpClient.PostAsync(_apiUrl + "DeleteData", content);
@@ -201,19 +201,19 @@ namespace FrontEndMCF.Controllers
                     }
                     else
                     {
-                        // Lempar exception atau tangani sesuai kebutuhan jika terjadi kesalahan pada response
+                      
                         throw new Exception(data.MESSAGE);
                     }
                 }
                 else
                 {
-                    // Lempar exception atau tangani jika terjadi kesalahan saat melakukan request ke API
+                   
                     throw new Exception("Failed to fetch data from the API.");
                 }
             }
             else
             {
-                // Lempar exception atau tangani sesuai kebutuhan jika token tidak ditemukan
+         
                 throw new UnauthorizedAccessException("Token is missing. Please log in.");
             }
         }
