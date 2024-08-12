@@ -49,6 +49,7 @@ builder.Services.AddSwaggerGen(c =>
                 }
                 });
 });
+
 builder.Services.AddDbContext<TechnicalTest_MCFContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("TechnicalTest_MCF")));
 
 builder.Services.AddTransient<ITokenManager, TokenManager>();
@@ -99,7 +100,11 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "MCF API V1");
     });
 }
-
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MCF API V1");
+});
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

@@ -36,85 +36,38 @@ namespace FrontEndMCF.Controllers
         }
         public async Task<IActionResult> ListData()
         {
-            if (ModelState.IsValid)
-            {
-                var token = _httpContextAccessor.HttpContext.Session.GetString("JWToken");
-                if (token != null)
-                {
-                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                    var content = new StringContent(string.Empty, Encoding.UTF8, "application/json");
-                    var response = await _httpClient.PostAsync(_apiUrl + "GetList", null);
-                    var ss = response;
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var result = await response.Content.ReadAsStringAsync();
-                        var data = JsonConvert.DeserializeObject<ServiceResponseSingle<List<ResDataBPKB>>>(result);
-                        if (data.CODE == 1)
-                        {
-
-                            return View("/Views/BPKB/ListBPKB.cshtml",data.DATA);
-                        }
-                        else
-                        {
-                            TempData["ErrorMessage"] = data.MESSAGE;
-                            return RedirectToAction("ListData", "BPKB");
-                        }
-                    }
-                    else
-                    {
-                        TempData["ErrorMessage"] = " data.MESSAGE";
-                        return RedirectToAction("ListData", "BPKB");
-                    }
-                }
-                else
-                {
-                    return RedirectToAction("Login", "Login");
-                }
-
-
-            }
-            return View("/Views/BPKB/ListBPKB.cshtml");
-        }
-
-        public async Task<IActionResult> Edit(string? id)
-        {
-            if (id == null)
-            {
-                return View("/Views/BPKB/ListBPKB.cshtml");
-            }
-            else
+            var IsLoggin = IsUserLoggedIn();
+            if (IsLoggin)
             {
                 if (ModelState.IsValid)
                 {
+
                     var token = _httpContextAccessor.HttpContext.Session.GetString("JWToken");
                     if (token != null)
                     {
                         _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var payload = new { id = id };
-                        var jsonContent = JsonConvert.SerializeObject(payload);
-                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-                        var response = await _httpClient.PostAsync(_apiUrl + "GetDataById", content);
+                        var content = new StringContent(string.Empty, Encoding.UTF8, "application/json");
+                        var response = await _httpClient.PostAsync(_apiUrl + "GetList", null);
                         var ss = response;
                         if (response.IsSuccessStatusCode)
                         {
                             var result = await response.Content.ReadAsStringAsync();
-                            var data = JsonConvert.DeserializeObject<ServiceResponseSingle<ResDataBPKB>>(result);
+                            var data = JsonConvert.DeserializeObject<ServiceResponseSingle<List<ResDataBPKB>>>(result);
                             if (data.CODE == 1)
                             {
-                                var dropdown = await FetchDropdown();
-                                TempData["DropdownItems"] = dropdown;
-                                return View("/Views/BPKB/EditBPKB.cshtml", data.DATA);
+
+                                return View("/Views/BPKB/ListBPKB.cshtml", data.DATA);
                             }
                             else
                             {
                                 TempData["ErrorMessage"] = data.MESSAGE;
-                                return RedirectToAction("Edit", "BPKB");
+                                return RedirectToAction("ListData", "BPKB");
                             }
                         }
                         else
                         {
                             TempData["ErrorMessage"] = " data.MESSAGE";
-                            return RedirectToAction("Edit", "BPKB");
+                            return RedirectToAction("ListData", "BPKB");
                         }
                     }
                     else
@@ -124,6 +77,75 @@ namespace FrontEndMCF.Controllers
 
 
                 }
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
+           
+            return View("/Views/BPKB/ListBPKB.cshtml");
+        }
+
+        public async Task<IActionResult> Edit(string? id)
+        {
+
+            if (id == null)
+            {
+                return View("/Views/BPKB/ListBPKB.cshtml");
+            }
+            else
+            {
+                var IsLoggin = IsUserLoggedIn();
+                if (IsLoggin)
+                {
+                    if (ModelState.IsValid)
+                    {
+                        var token = _httpContextAccessor.HttpContext.Session.GetString("JWToken");
+                        if (token != null)
+                        {
+                            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                            var payload = new { id = id };
+                            var jsonContent = JsonConvert.SerializeObject(payload);
+                            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+                            var response = await _httpClient.PostAsync(_apiUrl + "GetDataById", content);
+                            var ss = response;
+                            if (response.IsSuccessStatusCode)
+                            {
+                                var result = await response.Content.ReadAsStringAsync();
+                                var data = JsonConvert.DeserializeObject<ServiceResponseSingle<ResDataBPKB>>(result);
+                                if (data.CODE == 1)
+                                {
+                                    var dropdown = await FetchDropdown();
+                                    TempData["DropdownItems"] = dropdown;
+                                    return View("/Views/BPKB/EditBPKB.cshtml", data.DATA);
+                                }
+                                else
+                                {
+                                    TempData["ErrorMessage"] = data.MESSAGE;
+                                    return RedirectToAction("Edit", "BPKB");
+                                }
+                            }
+                            else
+                            {
+                                TempData["ErrorMessage"] = " data.MESSAGE";
+                                return RedirectToAction("Edit", "BPKB");
+                            }
+                        }
+                        else
+                        {
+                            return RedirectToAction("Login", "Login");
+                        }
+
+
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("Login", "Login");
+                }
+
+              
                 return View("/Views/BPKB/EditBPKB.cshtml");
             }
 
@@ -136,46 +158,56 @@ namespace FrontEndMCF.Controllers
             }
             else
             {
-                if (ModelState.IsValid)
+                var IsLoggin = IsUserLoggedIn();
+                if (IsLoggin)
                 {
-                    var token = _httpContextAccessor.HttpContext.Session.GetString("JWToken");
-                    if (token != null)
+                    if (ModelState.IsValid)
                     {
-                        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var payload = new { id = id }; 
-                        var jsonContent = JsonConvert.SerializeObject(payload);
-                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-                        var response = await _httpClient.PostAsync(_apiUrl + "DeleteData", content);
-                        var ss = response;
-                        if (response.IsSuccessStatusCode)
+                        var token = _httpContextAccessor.HttpContext.Session.GetString("JWToken");
+                        if (token != null)
                         {
-                            var result = await response.Content.ReadAsStringAsync();
-                            var data = JsonConvert.DeserializeObject<ServiceResponseSingle<ResDataBPKB>>(result);
-                            if (data.CODE == 1)
+                            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                            var payload = new { id = id };
+                            var jsonContent = JsonConvert.SerializeObject(payload);
+                            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+                            var response = await _httpClient.PostAsync(_apiUrl + "DeleteData", content);
+                            var ss = response;
+                            if (response.IsSuccessStatusCode)
                             {
+                                var result = await response.Content.ReadAsStringAsync();
+                                var data = JsonConvert.DeserializeObject<ServiceResponseSingle<ResDataBPKB>>(result);
+                                if (data.CODE == 1)
+                                {
 
-                                TempData["SuccessMessage"] = data.MESSAGE;
-                                return RedirectToAction("ListData", "BPKB");
+                                    TempData["SuccessMessage"] = data.MESSAGE;
+                                    return RedirectToAction("ListData", "BPKB");
+                                }
+                                else
+                                {
+                                    TempData["ErrorMessage"] = data.MESSAGE;
+                                    return RedirectToAction("ListData", "BPKB");
+                                }
                             }
                             else
                             {
-                                TempData["ErrorMessage"] = data.MESSAGE;
+                                TempData["ErrorMessage"] = "Terjadi kesalahan";
                                 return RedirectToAction("ListData", "BPKB");
                             }
                         }
                         else
                         {
-                            TempData["ErrorMessage"] = "Terjadi kesalahan";
-                            return RedirectToAction("ListData", "BPKB");
+                            return RedirectToAction("Login", "Login");
                         }
-                    }
-                    else
-                    {
-                        return RedirectToAction("Login", "Login");
-                    }
 
 
+                    }
                 }
+                else
+                {
+                    return RedirectToAction("Login", "Login");
+                }
+
+              
             }
             return RedirectToAction("ListData", "BPKB");
         }
